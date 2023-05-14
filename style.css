@@ -1,0 +1,237 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* NEVER DELETE - Hack to set <p> element based on heading above it*/
+.hyg_left-col{
+	
+	display:flex;
+	flex-direction:column;
+	gap:2.5em;
+
+}
+
+
+
+.hyg_subhead {
+	display:block;
+  width:0;
+  min-width:100%;
+  padding:0;
+  margin:0;
+}
+
+.hyg_subhead p{
+	line-height: 180%;
+}
+
+.hyg_size-by-heading{
+	display:flex;
+	flex-direction:column;
+	width:fit-content;
+	gap:1.5em;
+}
+
+.hyg_size-by-heading h2{
+	line-height: 1;
+}
+
+/* Global styles */
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f5f5f5;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2{
+	font-family:'Playfair Display', serif;
+	font-size:clamp(1.5rem, 4vw , 3rem);
+}
+h3{
+	font-family: 'Playfair Display', serif;
+	font-size: clamp(1.5rem, 4vw , 3rem);
+}
+
+.hyg_cta-btns{
+	display:flex;
+	align-items: center;
+	gap:1em;
+}
+
+.hyg_primary-cta{
+	background-color:rgba(109, 237, 226, 0.279);
+	padding:1em 2em;
+}
+
+.hyg_primary-cta:hover{
+	background-color:rgba(109, 237, 226, 0.479);
+}
+
+.hyg-secondary-cta{
+	/* Subtle no BG no border */
+}
+
+.hyg_active{
+	position: relative;
+}
+
+.hyg_active::before{
+	content:"";
+	position: absolute;
+	height: 20px;
+	bottom: -5px;
+	left:-10px;
+	width:40px;
+	border-bottom: solid 5px black;
+	border-left: solid 5px black;
+}
+
+/* Page Styles */
+
+
+.hyg_wrapper{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+}
+
+.hyg_header{
+	width:100%;
+	height:auto;
+}
+
+nav{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:1em 0;
+}
+
+.hyg_nav-menu{
+	display:flex;
+	gap:1em;
+
+}
+
+/* 
+
+.hyg_hero{
+	width:100%;
+	min-height: 70vh;
+	background-image: url(COMP_BLUR_HERO3.jpg);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#c1c1c1;
+	background-blend-mode: multiply;
+	margin-block-start: 0px;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0;
+	padding-block-start: 0px;
+	padding-block-end: 0;
+	padding-inline-start: 0px;
+	padding-inline-end: 0;
+}
+
+.hyg_hero-content{
+	display:flex;
+	flex-direction:column;
+}
+
+
+.hyg_hero-h1-text{
+	font-family: 'Playfair Display SC', serif;
+	color: #ffffff54;
+	font-size:clamp(2.5rem, 9vw , 18rem);
+	font-weight:700;
+	width:100%;
+	position:relative;
+	text-shadow: -3px -1px 12px rgba(0, 0, 0, 0.584);
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+
+}
+
+.hyg_hero-h1-text::before{
+	content: "Regatta Point";
+	position:absolute;
+	top: 0px;
+	left:0px;
+	z-index:10;
+	mix-blend-mode: overlay;
+	color:#fffdd6;
+	opacity: 100%;
+	
+}
+
+
+
+
+.hyg_hero-content h6{
+	font-family: 'Manrope', sans-serif;
+	font-size: clamp(1rem, 4vw , 4rem);
+	font-weight: 100;
+	color: #fffdd6;
+	letter-spacing: clamp(1rem, 4vw, 5rem);
+	align-self: center;
+
+	text-align: right;
+	margin-block-start: -0.5em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.hyg_hero-content p{
+	font-family: 'Manrope', sans-serif;
+	color:#ffffffe3;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.hyg_goodLife-cont{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+	padding: 2em 0;
+}
+ */
