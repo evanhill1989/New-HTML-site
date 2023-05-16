@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	background-color: white;
 }
 
 /* NEVER DELETE - Hack to set <p> element based on heading above it*/
