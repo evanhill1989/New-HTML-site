@@ -1,4 +1,6 @@
 /* Reset styles */
+
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,13 +8,6 @@
 }
 
 /* NEVER DELETE - Hack to set <p> element based on heading above it*/
-.hyg_left-col{
-	
-	display:flex;
-	flex-direction:column;
-	gap:2.5em;
-
-}
 
 
 
@@ -39,8 +34,9 @@
 	line-height: 1;
 }
 
-/* Global styles */
+/* Global styles. Possible to ignore for Wordpress */
 body {
+	margin:0;
 	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
@@ -50,13 +46,29 @@ body {
 	margin-right: 10%;
 }
 
-a {
-	color: #333;
-	text-decoration: none;
+.hyg_wrapper{
+	max-width:1200px;
+	margin:0 auto;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	gap:1em;
 }
 
-ul {
+/* a {
+	color: #333;
+	text-decoration: none;
+} */
+
+nav ul {
 	list-style: none;
+	margin:0;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+	font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,42 +114,100 @@ h3{
 	content:"";
 	position: absolute;
 	height: 20px;
-	bottom: -5px;
+	bottom: -6px;
 	left:-10px;
-	width:40px;
+	width:35%;
 	border-bottom: solid 5px black;
 	border-left: solid 5px black;
 }
 
+img{
+	max-width:100%;
+	height:auto;
+}	
+
 /* Page Styles */
 
-
-.hyg_wrapper{
-	width:100%;
-	height:auto;
-	display:flex;
-	flex-direction:column;
-	gap:1em;
-}
-
-.hyg_header{
-	width:100%;
-	height:auto;
-}
-
-nav{
-	width:100%;
-	height:auto;
+header{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	padding:1em 0;
+	flex-direction: row;
+}
+
+nav{
+	margin:2.75em;
+	
+}
+
+main{
+	display:flex;
+	gap:1em;
 }
 
 .hyg_nav-menu{
 	display:flex;
 	gap:1em;
 
+}
+
+.hyg_left-col{
+	display:flex;
+	flex-direction:column;
+	gap:2.5em;
+	flex-basis: 35%;
+}
+
+.hyg_right-col{
+	display:flex;
+	flex-direction:column;
+	gap:1em;
+	flex-basis: 65%;
+	padding:3em 6em;
+}
+
+
+
+.hyg_pic-taperoll{
+	transform: rotate(-17deg);
+	display:grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	
+	grid-template-areas: 
+	"pic1 pic2"
+	"pic3 pic4"
+	;
+
+
+	gap:1em;	
+}
+
+.pic1{
+	grid-area: pic1;
+	max-width:40%;
+	height:auto;
+	align-self: end;
+	
+	justify-self: end;
+}
+
+.pic2{
+	grid-area: pic2;
+	max-width:100%;
+	height:auto;
+}
+
+.pic3{
+	grid-area: pic3;
+	max-width:100%;
+	height:auto;
+}
+
+.pic4{
+	grid-area: pic4;
+	max-width:50%;
+	height:auto;
 }
 
 /* 
