@@ -88,7 +88,7 @@ h3{
 	font-size: clamp(1.5rem, 4vw , 3rem);
 }
 
-.hyg_cta-btns{
+.hyg_cta-btns, .hyg-secondary-cta{
 	display:flex;
 	align-items: center;
 	gap:1em;
@@ -97,6 +97,9 @@ h3{
 .hyg_primary-cta{
 	background-color:rgba(109, 237, 226, 0.279);
 	padding:1em 2em;
+	font-size:1.125rem;
+	color:black;
+	text-decoration: none;
 }
 
 .hyg_primary-cta:hover{
@@ -163,7 +166,7 @@ main{
 	display:flex;
 	flex-direction:column;
 	gap:1em;
-	flex-basis: 65%;
+	flex-grow:1;
 	padding:3em 6em;
 }
 
